@@ -40,9 +40,8 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(Long id, @NotBlank String nomeCompleto, @NotBlank String setor, @NotBlank String codigoVinculo,
+    public Usuario(@NotBlank String nomeCompleto, @NotBlank String setor, @NotBlank String codigoVinculo,
             @NotBlank String telefone, @NotBlank String celular, @NotBlank @Email String email) {
-        this.id = id;
         this.nomeCompleto = nomeCompleto;
         this.setor = setor;
         this.codigoVinculo = codigoVinculo;
