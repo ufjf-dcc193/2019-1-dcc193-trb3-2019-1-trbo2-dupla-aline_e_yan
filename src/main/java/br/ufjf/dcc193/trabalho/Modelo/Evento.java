@@ -1,7 +1,6 @@
 
 package br.ufjf.dcc193.trabalho.Modelo;
 
-import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -40,8 +39,7 @@ public class Evento {
     public Evento() {
     }
 
-    public Evento(Long id, Date data, @NotBlank String tipo, Atendimento idatendimento) {
-        this.id = id;
+    public Evento(Date data, @NotBlank String tipo, Atendimento idatendimento) {
         this.data = data;
         this.tipo = tipo;
         this.idatendimento = idatendimento;

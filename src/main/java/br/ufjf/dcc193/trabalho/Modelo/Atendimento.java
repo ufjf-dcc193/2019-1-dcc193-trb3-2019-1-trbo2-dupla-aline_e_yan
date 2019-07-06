@@ -3,7 +3,6 @@ package br.ufjf.dcc193.trabalho.Modelo;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
