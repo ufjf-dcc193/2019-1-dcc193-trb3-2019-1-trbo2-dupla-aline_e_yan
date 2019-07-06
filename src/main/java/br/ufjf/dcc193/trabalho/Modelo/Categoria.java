@@ -1,0 +1,41 @@
+package br.ufjf.dcc193.trabalho.Modelo;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+
+/**
+ * Categoria
+ */
+@Entity
+public class Categoria {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long Id;
+
+    @NotBlank
+    private String titulo;
+
+    @NotBlank
+    private String descricaoTextual;
+
+    public Categoria() {
+    }
+
+    public Categoria(Long id, @NotBlank String titulo, @NotBlank String descricaoTextual) {
+        Id = id;
+        this.titulo = titulo;
+        this.descricaoTextual = descricaoTextual;
+    }
+
+    @Override
+    public String toString() {
+        return "Categoria [Id=" + Id + ", descricaoTextual=" + descricaoTextual + ", titulo=" + titulo + "]";
+    }
+
+    
+
+}
