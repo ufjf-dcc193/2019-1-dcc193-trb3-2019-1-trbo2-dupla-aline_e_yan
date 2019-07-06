@@ -25,8 +25,7 @@ public class Categoria {
     public Categoria() {
     }
 
-    public Categoria(Long id, @NotBlank String titulo, @NotBlank String descricaoTextual) {
-        Id = id;
+    public Categoria(@NotBlank String titulo, @NotBlank String descricaoTextual) {
         this.titulo = titulo;
         this.descricaoTextual = descricaoTextual;
     }
