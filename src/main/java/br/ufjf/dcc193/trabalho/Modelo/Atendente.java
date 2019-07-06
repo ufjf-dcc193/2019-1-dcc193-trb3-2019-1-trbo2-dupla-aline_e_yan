@@ -35,9 +35,8 @@ public class Atendente {
     public Atendente() {
     }
 
-    public Atendente(Long id, @NotBlank String nomeCompleto, @NotBlank String nomeAcesso, @NotBlank String telefone,
+    public Atendente(@NotBlank String nomeCompleto, @NotBlank String nomeAcesso, @NotBlank String telefone,
             @NotBlank String celular, @NotBlank String email) {
-        this.id = id;
         this.nomeCompleto = nomeCompleto;
         this.nomeAcesso = nomeAcesso;
         this.telefone = telefone;
